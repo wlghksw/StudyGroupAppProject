@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- 고정된 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/navy"
+        app:titleTextColor="@color/white">
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_action_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원님에 대하여 알려주세요!"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 성함을 입력해주세요"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editTextEmail_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 사용하실 아이디를 입력해주세요"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editTextPassword_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 대문자, 소문자, 특수기호를 사용해주세요"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Check"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 설정한 비밀번호를 한번 더 입력해주세요"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birth"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editTextBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 생년월일 (YYYY-MM-DD)"
+            android:background="@drawable/border"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"
+                android:layout_marginStart="24dp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBoxTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="약관에 동의합니다." />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#001BA1"
+            android:textSize="23dp"
+            android:typeface="sans"
+            app:cornerRadius="11dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

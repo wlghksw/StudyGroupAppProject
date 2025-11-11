@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/navy"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="메인 화면"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="당신의 미래를 켜는 버튼,"
+                android:textStyle="bold"
+                android:textSize="23dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ON-Class에 오신 것을 환영합니다!"
+                android:textStyle="bold"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ON-Class가 처음이신가요?"
+                android:textSize="17dp"
+                android:layout_marginTop="30sp"/>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#001BA1"
+                android:text="회원가입 하러가기"
+                android:textSize="20dp"
+                app:cornerRadius="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기존 회원이신가요?"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#001BA1"
+                android:text="로그인 하러가기"
+                android:textSize="20dp"
+                android:layout_marginBottom="110dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
