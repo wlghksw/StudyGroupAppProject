@@ -1,5 +1,8 @@
 # StudyGroupAppProject
 
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/be6e2cac-7d18-4885-b438-404f606d3756)
+
+
 학습 강의 수강과 커뮤니티, 퀴즈 기능을 결합한 안드로이드 교육 앱입니다. `Java` 기반으로 작성되었고 오프라인 `SQLite` 저장소와 `SharedPreferences`를 통해 사용자 및 학습 데이터를 관리합니다.
 
 ## 주요 기능
